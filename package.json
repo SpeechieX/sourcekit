@@ -6,9 +6,28 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "@urbica/react-map-gl": "^1.13.1",
+    "apollo-boost": "^0.4.9",
+    "axios": "^0.19.2",
+    "cors": "^2.8.5",
+    "deck.gl": "^8.2.4",
+    "graphql": "^15.1.0",
+    "graphql-date": "^1.0.3",
+    "jsonwebtoken": "^8.5.1",
+    "mapbox-gl-traffic": "^1.0.1",
+    "mongoose": "^5.9.20",
+    "morgan": "^1.10.0",
     "react": "^16.13.1",
+    "react-apollo": "^3.1.5",
+    "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-map-gl": "^5.2.7",
+    "react-map-gl-geocoder": "^2.0.11",
+    "react-mapbox-gl": "^4.8.6",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-switch": "^5.0.1",
+    "swr": "^0.2.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -30,5 +49,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "schema.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
