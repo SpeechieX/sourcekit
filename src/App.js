@@ -7,7 +7,7 @@ Server Code for React x GraphQL x Node x MongoDB Testing.
 
 import React, { useState } from "react";
 import DeckGL from "@deck.gl/react";
-import { LineLayer } from "@deck.gl/layers";
+// import { LineLayer } from "@deck.gl/layers";
 
 // Solids
 import ReactMapGL, { FullscreenControl } from "@urbica/react-map-gl";
@@ -34,12 +34,12 @@ const client = new ApolloClient({
   uri: "http://localhost:5000/graphql",
 });
 
-const route = [
-  {
-    sourcePosition: [102.6264271047922, 18.03090283648859],
-    targetPosition: [102.5976198, 17.9709182],
-  },
-];
+// const route = [
+//   {
+//     sourcePosition: [102.6264271047922, 18.03090283648859],
+//     targetPosition: [102.5976198, 17.9709182],
+//   },
+// ];
 
 // const fetcher = (...args) => fetch(...args).then(response.json());
 
@@ -52,7 +52,7 @@ export default function App(route) {
     zoom: 8.5,
   });
 
-  const layers = [new LineLayer({ id: "line-layer", route })];
+  // const layers = [new LineLayer({ id: "line-layer", route })];
 
   // const [location, getLocation] = useState({
   //   getLocation = navigator.geolocation.getCurrentPosition()
@@ -71,11 +71,11 @@ export default function App(route) {
         <div id="menu-two" className="menu-two"></div>
 
         <div className="container">
-          <DeckGL
+          {/* <DeckGL
             initialViewState={[viewport, setViewport]}
             controller={true}
             layers={layers}
-          ></DeckGL>
+          ></DeckGL> */}
           <ReactMapGL
             {...viewport}
             style={{ width: "100%", height: "1000px" }}
